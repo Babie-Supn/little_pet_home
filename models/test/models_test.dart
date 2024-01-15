@@ -1,8 +1,11 @@
-import 'package:models/models/pet.dart';
 import 'package:test/test.dart';
+import 'package:models/models.dart';
 
 void main() {
-  test('cat', () {
-    print(PetType.cat.breeds);
+  test('catCount', () {
+    expect(Species.cat.breeds.length, 45);
+  });
+  test('dogCount', () {
+    expect(Species.dog.breeds.length, 288);
   });
 }

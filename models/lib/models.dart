@@ -1,1 +1,1 @@
-export 'models/pet.dart';
+export 'src/index.dart';
