@@ -3,6 +3,15 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'pet.g.dart';
 part 'pet.freezed.dart';
 
+enum PetType {
+  cat(CatBreed.values),
+  dog(DogBreed.values);
+
+  final List<Enum> breeds;
+
+  const PetType(this.breeds);
+}
+
 @Freezed(unionKey: 'type')
 class Pet with _$Pet {
   const Pet._();
@@ -12,7 +21,8 @@ class Pet with _$Pet {
     required DateTime birth,
     required Gender gender,
     required String description,
-    required Cat type,
+    required CatBreed breed,
+    @Default(PetType.cat) PetType type,
     String? avatarUrl,
   }) = _PetCat;
 
@@ -21,7 +31,8 @@ class Pet with _$Pet {
     required DateTime birth,
     required Gender gender,
     required String description,
-    required Dog type,
+    required DogBreed breed,
+    @Default(PetType.dog) PetType type,
     String? avatarUrl,
   }) = _PetDog;
 

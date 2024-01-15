@@ -1,12 +1,10 @@
-/// Cats, from [CFA](https://cfa.org/breeds/)
+/// [CFA](https://cfa.org/breeds/)
 ///
 /// ```js
 /// const links = document.querySelectorAll("a.elementor-button-link.elementor-button.elementor-size-sm");
 /// Array.from(links).map((e)=>e.href.replace('https://cfa.org/','').replace('/','').replace(/-\w/g, (match) =>match[1].toUpperCase())).slice(2);
-///
-///
 /// ```
-enum Cat {
+enum CatBreed {
   abyssinian,
   americanBobtail,
   americanCurl,
