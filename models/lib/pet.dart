@@ -14,7 +14,7 @@ class Pet with _$Pet {
     required String description,
     required Cat type,
     String? avatarUrl,
-  }) = _PetCat;
+  }) = PetCat;
 
   const factory Pet.dog({
     required String name,
@@ -23,7 +23,7 @@ class Pet with _$Pet {
     required String description,
     required Dog type,
     String? avatarUrl,
-  }) = _PetDog;
+  }) = PetDog;
 
   factory Pet.fromJson(Map<String, dynamic> json) => _$PetFromJson(json);
 }

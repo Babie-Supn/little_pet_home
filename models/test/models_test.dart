@@ -1,6 +1,6 @@
-import 'package:models/models.dart';
+import 'package:models/index.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('calculate', () {});
+  test('cat', () {});
 }

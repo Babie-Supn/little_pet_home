@@ -1,0 +1,3 @@
+enum Dog {
+  others;
+}
