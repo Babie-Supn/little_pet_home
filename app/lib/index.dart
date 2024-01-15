@@ -11,6 +11,8 @@ export 'dart:io';
 export 'package:flutter/material.dart';
 export 'package:flutter/cupertino.dart' hide RefreshCallback;
 
+export 'package:models/models.dart';
+
 export 'package:based_list/based_list.dart';
 export 'package:based_splash_page/based_splash_page.dart';
 export 'package:based_split_view/based_split_view.dart';

@@ -32,6 +32,9 @@ dependencies:
   url_launcher: ^6.2.3
   window_manager: ^0.3.7
 
+  models:
+    path: ../models
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
