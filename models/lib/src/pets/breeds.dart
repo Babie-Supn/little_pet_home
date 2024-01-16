@@ -51,6 +51,7 @@ enum Breeds {
   toybob(species: Species.cat),
   turkishAngora(species: Species.cat),
   turkishVa(species: Species.cat),
+  othersCat(species: Species.cat),
 
   affenpinscher(species: Species.dog),
   afghanHound(species: Species.dog),
@@ -339,7 +340,8 @@ enum Breeds {
   workingKelpie(species: Species.dog),
   xoloitzcuintli(species: Species.dog),
   yakutianLaika(species: Species.dog),
-  yorkshireTerrie(species: Species.dog);
+  yorkshireTerrie(species: Species.dog),
+  othersDog(species: Species.dog);
 
   final Species species;
 

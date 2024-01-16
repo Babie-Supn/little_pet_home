@@ -13,8 +13,7 @@ class Pet with _$Pet {
     required DateTime birth,
     required Gender gender,
     required String description,
-    required Species species,
-    Breeds? breeds,
+    required Breeds breeds,
     String? avatarUrl,
   }) = _Pet;
 
