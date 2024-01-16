@@ -16,7 +16,7 @@ abstract class App {
   static void run() async {
     WidgetsFlutterBinding.ensureInitialized();
 
-    if (Platform.isWindows) {
+    if (Platform.isWindows || Platform.isMacOS) {
       await WindowController.init();
     }
 
@@ -28,6 +28,9 @@ abstract class App {
       ProviderScope(
         observers: const [_ProviderObserver()],
         overrides: [
+          pathsProvider.overrideWithValue(
+            await Paths.init(),
+          ),
           persistenceProvider.overrideWithValue(
             await Persistence.init(),
           ),
